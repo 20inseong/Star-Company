@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Star Company</title>
+    <style>
+      body {
+        background-image: url('MilkyWay.jpg');
+        background-size: cover;
+      }
+      .Cant{
+        user-select: none;
+        color: gold;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1px; /* padding 값을 줄임 */
+      }
+      .menu-item {
+        padding: 10px;
+        transition: transform 0.3s ease;
+        user-select: none;
+      }
+      .menu-item:hover {
+        transform: scale(1.1);
+      }
+      h1 {
+        color: white;
+        text-align: center;
+      }
+      h2 {
+        color: whitesmoke;
+        text-align: center;
+      }
+      nav {
+        background-color: #333;
+        color: white;
+        padding: 1em;
+      }
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+      nav li {
+        margin-right: 1em;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.2em;
+      }
+    </style>
+
+    <meta charset="UTF-8">
+    <title>Bootstrap Card Example</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  </head>
+  <body>
+    <nav style="opacity: 0.5;">
+      <div class="menu">
+        <div class="logo">
+          <h1 class="Cant">Star Company</h1>
+        </div>
+        <ul class="menu-list">
+          <li class="menu-item">Home</li>
+          <li class="menu-item">About</li>
+          <li class="menu-item">Services</li>
+          <li class="menu-item">Contact</li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <h1 style="color: white">당신의 찬란한 꿈을 위해서 도전하세요</h1>
+      <h2 style="color: white">Start your journey to the stars.</h2>
+    </div>
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">개발자</h5>
+              <p class="card-text">저는 웹 프론트엔드 개발자로 일하고 있습니다. HTML, CSS, JavaScript를 사용하여 다양한 웹 사이트를 만들어왔습니다.</p>
+              <a href="#" class="btn btn-primary">프로필 보기</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">성능</h5>
+              <p class="card-text">저는 웹 사이트의 성능 최적화에 관심이 많습니다. 이미지 최적화, CSS/JS 번들링, 코드 스플리팅 등의 기술을 사용하여 웹 사이트의 로딩 속도를 빠르게 만들 수 있습니다.</p>
+              <a href="#" class="btn btn-primary">자세히 알아보기</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
